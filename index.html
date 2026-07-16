@@ -138,12 +138,10 @@
       display: flex; align-items: center;
       justify-content: space-between; height: 100%;
     }
-    .nav-logo { display: flex; align-items: center; gap: var(--xs); }
-    .nav-logo-dot {
-      width: 34px; height: 34px; background: var(--teal); border-radius: 50%;
-      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    .nav-logo { display: flex; align-items: center; gap: var(--sm); }
+    .nav-logo-img {
+      height: 34px; width: auto; border-radius: 4px; flex-shrink: 0;
     }
-    .nav-logo-dot svg { width: 16px; height: 16px; }
     .nav-logo-text {
       font-family: var(--font-h); font-size: 15px; font-weight: 700;
       color: #fff; letter-spacing: 1px; text-transform: uppercase; line-height: 1.2;
@@ -201,7 +199,7 @@
       background-color: var(--bg-dark);
       background-image:
         linear-gradient(to bottom, rgba(22,22,22,0.7) 0%, rgba(22,22,22,0.88) 100%),
-        url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80');
+        url('images/hero.jpg');
       background-size: cover; background-position: center 30%;
       padding-top: var(--nav-h);
     }
@@ -585,11 +583,8 @@
     <div class="nav-inner">
 
       <a href="/" class="nav-logo" aria-label="Excel Beyond Circumstances — Home">
-        <div class="nav-logo-dot" aria-hidden="true">
-          <svg viewBox="0 0 16 16" fill="none"><path d="M8 1.5l2 5h5l-4 3 1.5 5L8 11.5 3.5 14.5 5 9.5l-4-3h5L8 1.5z" fill="white" fill-opacity="0.9"/></svg>
-        </div>
+        <img class="nav-logo-img" src="images/logo.jpg" alt="Excel Beyond" />
         <div class="nav-logo-text">
-          Excel Beyond
           <small>Circumstances · Houston, TX</small>
         </div>
       </a>
@@ -704,8 +699,8 @@
       <div class="about-grid">
         <div class="reveal">
           <img class="about-img"
-            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
-            alt="A mentor working alongside a program participant at Excel Beyond Circumstances"
+            src="images/about.jpg"
+            alt="An Excel Beyond Circumstances staff member outside the Harris County Sheriff's Office and Detention Facility, where the organization runs in-facility rehabilitation programming"
             loading="lazy"
           />
         </div>
@@ -852,19 +847,19 @@
         </div>
         <div class="img-stack reveal d2">
           <img class="img-main"
-            src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=600&q=80"
-            alt="Community members gathered at a Houston neighborhood event"
+            src="images/community-main.jpg"
+            alt="Excel Beyond Circumstances staff and a program participant with Harris County Sheriff's deputies at the Boys Rock Too event"
             loading="lazy"
           />
           <div class="img-col">
             <img
-              src="https://images.unsplash.com/photo-1543269664-76bc3997d9ea?auto=format&fit=crop&w=400&q=80"
-              alt="Mentor working one-on-one with a program participant"
+              src="images/community-col1.jpg"
+              alt="An Excel Beyond Circumstances volunteer giving a child a free haircut at a Back to School community event in Wesley Square"
               loading="lazy"
             />
             <img
-              src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=400&q=80"
-              alt="Volunteers distributing meals through the Food Justice initiative"
+              src="images/community-col2.jpg"
+              alt="An Excel Beyond Circumstances volunteer styling a child's hair at a Back to School community event in Wesley Square"
               loading="lazy"
             />
           </div>
@@ -989,10 +984,8 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="/" class="nav-logo" aria-label="Excel Beyond Circumstances">
-          <div class="nav-logo-dot" aria-hidden="true">
-            <svg viewBox="0 0 16 16" fill="none"><path d="M8 1.5l2 5h5l-4 3 1.5 5L8 11.5 3.5 14.5 5 9.5l-4-3h5L8 1.5z" fill="white" fill-opacity="0.9"/></svg>
-          </div>
-          <div class="nav-logo-text">Excel Beyond<small>Circumstances &middot; Houston, TX</small></div>
+          <img class="nav-logo-img" src="images/logo.jpg" alt="Excel Beyond" />
+          <div class="nav-logo-text"><small>Circumstances &middot; Houston, TX</small></div>
         </a>
         <p>A 501(c)(3) nonprofit providing life coaching, mentoring, counseling, and community programs in Houston, TX. Tax-deductible donations accepted.</p>
         <div class="socials" aria-label="Social media">
