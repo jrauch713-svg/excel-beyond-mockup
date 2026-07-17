@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Excel Beyond Circumstances: Design Variants</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Quicksand', sans-serif; background: #f6f6f6; color: #1b1b1b;
+      padding: 64px 24px; line-height: 1.6;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    h1 { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: clamp(1.8rem, 5vw, 2.6rem); margin-bottom: 8px; }
+    p.sub { color: #595959; margin-bottom: 40px; }
+    .card {
+      display: block; background: #fff; border: 1px solid #e2e2e2; border-radius: 10px;
+      padding: 20px 24px; margin-bottom: 16px; text-decoration: none; color: inherit;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .card:hover { border-color: #008390; transform: translateY(-2px); }
+    .card h2 { font-family: 'Oswald', sans-serif; font-size: 1.05rem; font-weight: 600; color: #008390; margin-bottom: 4px; }
+    .card p { font-size: 0.92rem; color: #595959; }
+    .swatch { display: inline-flex; gap: 6px; margin-top: 10px; }
+    .swatch span { width: 16px; height: 16px; border-radius: 4px; display: inline-block; border: 1px solid rgba(0,0,0,0.1); }
+    .subpages { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .subpages a { font-size: 0.8rem; color: #008390; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Excel Beyond Circumstances</h1>
+    <p class="sub">Design variants for review. Pick a card to view.</p>
+
+    <a class="card" href="a-true-original/index.html">
+      <h2>A — True Original Colors</h2>
+      <p>Same single-page layout, corrected to the live site's actual teal shades.</p>
+      <div class="swatch"><span style="background:#008390"></span><span style="background:#007B87"></span><span style="background:#269FAB"></span><span style="background:#161616"></span></div>
+    </a>
+
+    <a class="card" href="b-terracotta/index.html">
+      <h2>B — Third Ward Brick</h2>
+      <p>Warm rust/terracotta palette, different real photo set.</p>
+      <div class="swatch"><span style="background:#B4522E"></span><span style="background:#8A3D22"></span><span style="background:#E8935E"></span><span style="background:#1C1310"></span></div>
+    </a>
+
+    <a class="card" href="c-maroon/index.html">
+      <h2>C — Houston Maroon</h2>
+      <p>Deep oxblood palette, different real photo set.</p>
+      <div class="swatch"><span style="background:#7A1F2E"></span><span style="background:#551520"></span><span style="background:#D97C8C"></span><span style="background:#181113"></span></div>
+    </a>
+
+    <a class="card" href="d-multipage/index.html">
+      <h2>D — Multipage Layout</h2>
+      <p>True-original colors, split across three real pages instead of one long scroll.</p>
+      <div class="subpages">
+        <a href="d-multipage/index.html">Home</a>
+        <a href="d-multipage/programs.html">Programs</a>
+        <a href="d-multipage/get-involved.html">Get Involved</a>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
